@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import { articleApi }from './article';
+
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+        [articleApi.reducerPath]: articleApi.reducer
+    },
     middleware: (getDefaultMiddleware) =>
-        getDefaultMiddleware().concat()
-})
+        getDefaultMiddleware().concat(articleApi.middleware)
+});
