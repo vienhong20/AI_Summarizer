@@ -1,3 +1,6 @@
+https://aisummize.netlify.app/
+
+
 # Build ChatGPT AI summary with React
 
 - setup a ReactJS project using Vite
